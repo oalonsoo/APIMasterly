@@ -1,0 +1,256 @@
+{
+    "categories": [
+        {
+            "name": "Cosmética",
+            "subcategories": [
+                {
+                    "name": "Perfume",
+                    "products": [
+                        {
+                            "name": "Chanel 5",
+                            "image": "https://images.unsplash.com/photo-1541643600914-78b084683601?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjMyMzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Nzk1MDQ1OTY&ixlib=rb-4.0.3&q=80&w=1080"
+                        },
+                        {
+                            "name": "Pearlessence",
+                            "image": "https://images.unsplash.com/photo-1601068785450-ba55f33dfe0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjMyMzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Nzk1MDQ2MDc&ixlib=rb-4.0.3&q=80&w=1080"
+                        },
+                        {
+                            "name": "Red Diamond",
+                            "image": "https://images.unsplash.com/photo-1608528577891-eb055944f2e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjMyMzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Nzk1MDI4MTc&ixlib=rb-4.0.3&q=80&w=1080"
+                        },
+                        {
+                            "name": "Coco Mademoiselle",
+                            "image": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=853&q=80"
+                        },
+                        {
+                            "name": "Zara Seoul",
+                            "image": "https://images.unsplash.com/photo-1582211594533-268f4f1edcb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        },
+                        {
+                            "name": "Sun di Giorgia",
+                            "image": "https://images.unsplash.com/photo-1547887537-6158d64c35b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        },
+                        {
+                            "name": "Dolce & Gabanna Grey",
+                            "image": "https://images.unsplash.com/photo-1601295452898-78a8dd904ab3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+                        },
+                        {
+                            "name": "Candy",
+                            "image": "https://images.unsplash.com/photo-1630573133526-8d090e0269af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        },
+                        {
+                            "name": "L'interdit Givenchy",
+                            "image": "https://images.unsplash.com/photo-1578996834254-13d1b661a5ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                        },
+                        {
+                            "name": "Prada Milano",
+                            "image": "https://images.unsplash.com/photo-1610461888750-10bfc601b874?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=699&q=80"
+                        }
+                    ]
+                },
+                {
+                    "name": "Cuidado piel",
+                    "products": [
+                        {
+                            "name": "Necessaire",
+                            "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjMyMzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Nzk1MDQ2MDI&ixlib=rb-4.0.3&q=80&w=1080"
+                        },
+                        {
+                            "name": "Curlogy",
+                            "image": "https://images.unsplash.com/photo-1571782742478-0816a4773a10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjMyMzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Nzk1MDQ2MDY&ixlib=rb-4.0.3&q=80&w=1080"
+                        },
+                        {
+                            "name": "Because it's you",
+                            "image": "https://images.unsplash.com/photo-1584949514123-474cfa705dfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        },
+                        {
+                            "name": "Marshol",
+                            "image": "https://images.unsplash.com/photo-1585232350744-974fc9804d65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        },
+                        {
+                            "name": "Faberlic Bioglow",
+                            "image": "https://images.unsplash.com/photo-1615397349754-cfa2066a298e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        },
+                        {
+                            "name": "Kit The Ordinary",
+                            "image": "https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                        },
+                        {
+                            "name": "Good Skin Club",
+                            "image": "https://images.unsplash.com/photo-1620756236308-65c3ef5d25f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                        },
+                        {
+                            "name": "Clarins Paris",
+                            "image": "https://images.unsplash.com/photo-1575410229391-19b4da01cc94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mobiliario",
+            "subcategories": [
+                {
+                    "name": "Mesas",
+                    "products": [
+                        {
+                            "name": "Mesa madera",
+                            "image": "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                        },
+                        {
+                            "name": "Mesa oficina",
+                            "image": "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                        },
+                        {
+                            "name": "Escritorio",
+                            "image": "https://images.unsplash.com/photo-1526040652367-ac003a0475fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        }
+                    ]
+                },
+                {
+                    "name": "Sillas",
+                    "products": [
+                        {
+                            "name": "Silla gris",
+                            "image": "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                        },
+                        {
+                            "name": "Taburete negro",
+                            "image": "https://images.unsplash.com/photo-1581539250439-c96689b516dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                        },
+                        {
+                            "name": "Taburete gris",
+                            "image": "https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        },
+                        {
+                            "name": "Silla oficina",
+                            "image": "https://images.unsplash.com/photo-1630266481643-a8a73e78638d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+                        },
+                        {
+                            "name": "Sillon gris",
+                            "image": "https://images.unsplash.com/photo-1619596662481-085e45d69762?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                        },
+                        {
+                            "name": "Sillon rosa",
+                            "image": "https://images.unsplash.com/photo-1586158291800-2665f07bba79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        },
+                        {
+                            "name": "Sillon blanco",
+                            "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        }
+                    ]
+                },
+                {
+                    "name": "Sofás",
+                    "products": [
+                        {
+                            "name": "Sofá verde",
+                            "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        },
+                        {
+                            "name": "Sofá marrón",
+                            "image": "https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        },
+                        {
+                            "name": "Sofá de cuero",
+                            "image": "https://images.unsplash.com/photo-1549187774-b4e9b0445b41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                        },
+                        {
+                            "name": "Sofá azul",
+                            "image": "https://images.unsplash.com/photo-1596900779744-2bdc4a90509a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=938&q=80"
+                        },
+                        {
+                            "name": "Sofá naranja",
+                            "image": "https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                        },
+                        {
+                            "name": "Sofá gris",
+                            "image": "https://images.unsplash.com/photo-1565330502541-4937be8552e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Zapatos",
+            "subcategories": [
+                {
+                    "name": "Zapatillas",
+                    "products": [
+                        {
+                            "name": "Air Jordan 1",
+                            "image": "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjMyMzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Nzk0OTYxOTQ&ixlib=rb-4.0.3&q=80&w=1080"
+                        },
+                        {
+                            "name": "Puma Smash V2",
+                            "image": "https://images.unsplash.com/photo-1545289414-1c3cb1c06238?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjMyMzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Nzk1MDQ2MDQ&ixlib=rb-4.0.3&q=80&w=1080"
+                        },
+                        {
+                            "name": "Nike Air Force 1",
+                            "image": "https://images.unsplash.com/photo-1543508282-6319a3e2621f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
+                        },
+                        {
+                            "name": "Converse All Star",
+                            "image": "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1421&q=80"
+                        },
+                        {
+                            "name": "Puma RS",
+                            "image": "https://images.unsplash.com/photo-1608667508764-33cf0726b13a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                        },
+                        {
+                            "name": "Adidas Continental 80",
+                            "image": "https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        },
+                        {
+                            "name": "Vans Old Skool",
+                            "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=698&q=80"
+                        }
+                    ]
+                },
+                {
+                    "name": "Running",
+                    "products": [
+                        {
+                            "name": "New Balance 247",
+                            "image": "https://images.unsplash.com/photo-1539185441755-769473a23570?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjMyMzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Nzk1MDQ1OTU&ixlib=rb-4.0.3&q=80&w=1080"
+                        },
+                        {
+                            "name": "Nike Free",
+                            "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        },
+                        {
+                            "name": "Brooks Hyperion Elite 2",
+                            "image": "https://images.unsplash.com/photo-1610969770059-7084269fa3be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        },
+                        {
+                            "name": "Nike Superrep",
+                            "image": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                        },
+                        {
+                            "name": "New Balance X-90",
+                            "image": "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1412&q=80"
+                        }
+                    ]
+                },
+                {
+                    "name": "Chanclas",
+                    "products": [
+                        {
+                            "name": "Crocs Rayo McQueen",
+                            "image": "https://images.stockx.com/images/Crocs-Classic-Clog-Lightning-McQueen-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1620405722"
+                        },
+                        {
+                            "name": "Nike Stussy",
+                            "image": "https://images.unsplash.com/photo-1622920799137-86c891159e44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                        },
+                        {
+                            "name": "Yeezy Slides",
+                            "image": "https://images.unsplash.com/photo-1626771652942-93d834f3d1fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+    
