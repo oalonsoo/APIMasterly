@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Models\Image;
+use Illuminate\Support\Facades\Storage;
 
 class ImageController extends Controller
 {
@@ -21,8 +23,14 @@ class ImageController extends Controller
         //     'main' => 'required|boolean',
         // ]);
 
+        if ($request['image']) {
+            $imagePath = $this->storeImage($request['image']);
+        } else {
+            $imagePath = $request['path'];
+        }
+
         $image = Image::create([
-            'path' => $request['path'],
+            'path' => $imagePath,
             'main' => $request['main'],
             'product_id' =>  $request['product_id']
         ]);
@@ -31,6 +39,17 @@ class ImageController extends Controller
             'message' => 'Image created successfully',
             'data' => $image
         ], 201);
+    }
+
+    private function storeImage($image)
+    {
+        $decodedImage = base64_decode($image);
+
+        $fileName = Str::uuid()->toString() . '.png';
+
+        Storage::put('public/images/' . $fileName, $decodedImage);
+
+        return url('storage/images/' . $fileName);
     }
 
     public function showByProductId($id)
