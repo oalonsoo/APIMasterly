@@ -1,0 +1,38 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "laravel/homestead"
+  config.vm.network "private_network", ip: "172.16.50.60"
+  config.vm.network "forwarded_port", guest: 80, host: 8080
+
+  config.vm.synced_folder "../apache", "/etc/apache2/sites-available", create: true
+  config.vm.synced_folder "..", "/var/www/apimasterly"
+
+  config.vm.provision "shell", inline: <<-SHELL
+    mysql -uroot -psecret -e "CREATE DATABASE IF NOT EXISTS masterly CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+
+    sudo mkdir -p /etc/apache2/ssl
+    sudo chown -R www-data:www-data /etc/apache2/ssl
+    sudo chmod 700 /etc/apache2/ssl
+    mkdir -p /var/www/apimasterly
+    cd /var/www/apimasterly
+    cp vagrant/apibotiga.crt /etc/apache2/ssl/
+    cp vagrant/apibotiga.key /etc/apache2/ssl/
+    cp /etc/apache2/sites-available/apibotiga.conf /etc/apache2/sites-enabled/
+    cd src
+    php artisan key:generate
+    php artisan migrate
+    systemctl restart apache2
+    export COMPOSER_ALLOW_SUPERUSER=1
+    composer install
+    cd ..
+    mkdir -p storage/ssl
+    cp vagrant/apibotiga.crt storage/ssl/
+    cp vagrant/apibotiga.key storage/ssl/
+    sudo systemctl restart apache2
+    cd src
+    php artisan serve --port=8080
+  SHELL
+
+  config.vm.boot_timeout = 600
+
+  config.ssh.forward_agent = false
+end

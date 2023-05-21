@@ -36,7 +36,7 @@ class ImageFactory extends Factory
         // $main = $this->checkMainImage($product->id);
 
 
-        return [    
+        return [
             'name' => $product['name'],
             'path' => $product['image'],
             'main' => false,
