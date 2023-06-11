@@ -15,9 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('path')/*->unique()*/;
             $table->boolean('main')->default(false);
-
-            $table->unsignedBigInteger('product_id')->index();
-            $table->foreign('product_id')->references('id')->on('products')->cascadeOnDelete();
+            $table->integer('product_id');
 
             $table->timestamps();
         });
