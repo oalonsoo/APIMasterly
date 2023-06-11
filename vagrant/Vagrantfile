@@ -1,35 +1,59 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "laravel/homestead"
+  config.vm.box = "debian/bullseye64"
   config.vm.network "private_network", ip: "172.16.50.60"
   config.vm.network "forwarded_port", guest: 80, host: 8080
 
-  config.vm.synced_folder "../apache", "/etc/apache2/sites-available", create: true
-  config.vm.synced_folder "..", "/var/www/apimasterly"
+  config.vm.synced_folder "../", "/vagrant"
 
   config.vm.provision "shell", inline: <<-SHELL
-    mysql -uroot -psecret -e "CREATE DATABASE IF NOT EXISTS masterly CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+    sudo apt -y update && sudo apt -y upgrade
 
-    sudo mkdir -p /etc/apache2/ssl
-    sudo chown -R www-data:www-data /etc/apache2/ssl
-    sudo chmod 700 /etc/apache2/ssl
-    mkdir -p /var/www/apimasterly
-    cd /var/www/apimasterly
-    cp vagrant/apibotiga.crt /etc/apache2/ssl/
-    cp vagrant/apibotiga.key /etc/apache2/ssl/
-    cp /etc/apache2/sites-available/apibotiga.conf /etc/apache2/sites-enabled/
-    cd src
-    php artisan key:generate
-    php artisan migrate
-    systemctl restart apache2
-    export COMPOSER_ALLOW_SUPERUSER=1
-    composer install
-    cd ..
-    mkdir -p storage/ssl
-    cp vagrant/apibotiga.crt storage/ssl/
-    cp vagrant/apibotiga.key storage/ssl/
+    #Apache
+    sudo apt install apache2 apache2-utils -y
+    sudo a2enmod rewrite
+
+    #MySQL
+    sudo apt install -y default-mysql-server
+    sudo systemctl restart mysql
+    sudo apt -y update && sudo apt -y upgrade   
+    mysql -uroot -psecret -e "CREATE DATABASE IF NOT EXISTS apimasterly CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+    mysql -uroot -psecret -e "SET PASSWORD FOR 'root'@'localhost' = PASSWORD('secret');"
+    mysql -uroot -psecret -e "FLUSH PRIVILEGES;"
+    sudo systemctl restart mysql
+
+    # PHP
+    sudo apt install -y apt-transport-https lsb-release ca-certificates
+    wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
+    echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list
+    sudo apt update
+    sudo apt install -y php8.2 libapache2-mod-php8.2 php8.2-cli php8.2-mbstring php8.2-dom php8.2-mysql php8.2-gd php8.2-curl php8.2-zip unzip p7zip
+
+    # Laravel
+    sudo apt install composer -y
+    sudo apt install curl -y
+
+    cp -r /vagrant/ /var/www/html/apimasterly
+    sudo chown -R www-data:www-data /var/www/html/apimasterly
+    sudo chmod -R 777 /var/www/html/apimasterly
+    sudo chmod -R 777 /var/www/html/apimasterly/src/storage
+
+    cd /var/www/html/apimasterly/src
+    cp .env.example .env
+
+    cp apibotiga.conf /etc/apache2/sites-available
+    cd /etc/apache2/sites-available/
+    a2dissite 000-default.conf
+    a2ensite apibotiga.conf
     sudo systemctl restart apache2
-    cd src
-    php artisan serve --port=8080
+    curl -sS https://getcomposer.org/installer | php 
+    mv composer.phar /usr/local/bin/composer
+
+    cd /var/www/html/apimasterly/src
+    composer update
+    composer install --ignore-platform-req=ext-sqlite3 -vvv --ignore-platform-req=ext-pdo_sqlite 
+    php artisan key:generate
+    php artisan migrate:fresh
+
   SHELL
 
   config.vm.boot_timeout = 600
